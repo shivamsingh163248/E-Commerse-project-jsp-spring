@@ -36,7 +36,7 @@
         }
 
        .navbar{
-               background-color: #949386;
+               background-color: rgba(231, 229, 229, 0.98);
                color: black;
 
         }
@@ -44,6 +44,147 @@
                 background-color: #151514;
                 color: #c92020;
           }
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+
+
+
+        .static-product-catlog .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 50px;
+
+            background: #CAC531;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #F3F9A7, #CAC531); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .static-product-catlog .product-card {
+            width: 300px;
+            border-radius: 10px;
+            -webkit-box-shadow:  0px 0px 47px -20px rgba(0,0,0,1);
+            -moz-box-shadow:  0px 0px 47px -20px rgba(0,0,0,1);
+            box-shadow:  0px 0px 47px -20px rgba(0,0,0,1);
+            margin: 60px 0px 60px 0px;
+            background-color: #fff;
+        }
+
+        .static-product-catlog .product-image {
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            top:-90px;
+            padding: 10px;
+        }
+
+        .static-product-catlog .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+            border-radius: 10px;
+        }
+
+        .static-product-catlog .product-image:hover img {
+            transform: scale(1.1);
+        }
+
+        .static-product-catlog .product-details {
+            padding: 20px;
+            margin-top:-90px;
+        }
+
+        .static-product-catlog .product-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .static-product-catlog .product-price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .static-product-catlog .product-description {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .static-product-catlog .product-details.expand {
+            height: auto;
+        }
+
+        .static-product-catlog .product-details .expand-button {
+            cursor: pointer;
+            font-size: 1rem;
+            color: #666;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .static-product-catlog .product-details .expand-button:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+        .static-product-catlog .buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .static-product-catlog .add-to-cart,
+        .compare {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .static-product-catlog .add-to-cart {
+            background-color: #666;
+        }
+
+        .static-product-catlog .compare {
+            background-color: #CAC531;
+            color:#fff;
+        }
+
+        .static-product-catlog .add-to-cart:hover,
+        .compare:hover {
+            opacity: 0.8;
+        }
+
+        .static-product-catlog .credit a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 800;
+        }
+
+        .static-product-catlog .credit{
+            color: #000;
+            text-align: center;
+            margin-top: 10px;
+            font-family: Verdana,Geneva,Tahoma,sans-serif;
+        }
+
 
 
 
@@ -87,7 +228,7 @@
     <nav class="navbar navbar-expand-lg ">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="../static/images/logo.jpg" width="auto" height="100" class="d-inline-block align-top" alt="">
+                <img src="../static/images/logo.png" width="auto" height="100" class="d-inline-block align-top" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,7 +239,7 @@
                 <ul class="navbar-nav
                 ">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">CART</a>
+                        <a class="nav-link" href="https://lovelymobilecenter.store/">Home</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="/buy" >Profile</a>
@@ -119,13 +260,13 @@
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-                <img src="../static/images/1.png" class="d-block w-100" alt="...">
+                <img src="../static/images/sail.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-                <img src="../static/images/2.png" class="d-block w-100" alt="...">
+                <img src="../static/images/gifts.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="../static/images/3.png" class="d-block w-100" alt="...">
+                <img src="../static/images/50off.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -142,24 +283,78 @@
 
 
 
+<section class="static-product-catlog">
+    <div class="container">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../static/images/headphone.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h2 class="product-title">HEADPHONE</h2>
+                <p class="product-price"> Rs : 999 OFF 50%</p>
+                <p class="product-description">Enjoy your music with the your faev song </p>
+                <div class="buttons">
+                    <button class="add-to-cart">Buy</button>
+                    <button class="compare">Offer Product</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../static/images/Apple-Jack.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h2 class="product-title">SMART PHONE JECK</h2>
+                <p class="product-price"> Rs : 999 OFF 50%</p>
+                <p class="product-description">This is the  TYPE -C jack.</p>
+                <div class="buttons">
+                    <button class="add-to-cart">Buy</button>
+                    <button class="compare">Offer Product</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../static/images/charger.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h2 class="product-title">CHARGER</h2>
+                <p class="product-price"> Rs : 999 OFF 50%</p>
+                <p class="product-description">Power up of your charger</p>
+                <div class="buttons">
+                    <button class="add-to-cart">buy</button>
+                    <button class="compare">Offer Product</button>
+                </div>
+            </div>
+        </div>
 
-  <section >
+    </div>
+</section>
+
+<section>
+
+    <img src="../static/images/off50offer.jpg" style="width: 100%; height: 100%; object-fit: cover; margin-top: 30px ; " alt="Product 1">
+</section>
+
+
+
+  <section style=" background : linear-gradient(to right, #f3c665, #f3a64e); border: 1px solid white; position: relative ;" >
 
       <div class="container">
-      <h1>Welcome to  Shop</h1>
+      <h1 style="text-align: center ; margin-top: 20px ; margin-bottom: 100px ;  color: red ; font-weight: bold ;  " >SAIL 50% OFF </h1>
 
 
       <div class="row">
       <c:forEach var="product" items="${products}">
-        <div class="col-md-3">
-          <div class="card mb-4">
-            <img class="card-img-top" src="${product.image}" alt="Product 1">
-            <div class="card-body">
-             <b> <h4 class="card-title">${product.name}</h4></b>
+        <div class="col-md-3" style="margin-left: 50px ;  ">
+          <div class="card mb-4"  style="border: 2px solid lightgoldenrodyellow; border-radius: 5% ; height: 450px ; box-shadow: 5px 10px 18px #f3cd80; width: 300px ;    " >
+            <img class="card-img-top" style="margin-top: 20px" src="${product.image}" alt="Product 1">
+            <div class="card-body" style="" >
+             <b> <h4 class="card-title" style="text-align: center ; color: white ; background-color: #6b6868 ; width: 100%  ;border-radius: 50px ; margin-top: 20px ;  " >${product.name}</h4></b>
               <h5 class="card-text">Category: ${product.category.name}</h5>
               <h5 class="card-text">Price: ${product.price}</h5>
               <p class="card-text">Description: ${product.description}</p>
-              <a href="https://rzp.io/i/FJSqTozxs1" class="btn btn-primary">Add to Cart</a>
+              <a href="https://rzp.io/i/FJSqTozxs1" ><button style="text-align: center ; background : linear-gradient(to right, #f3c665, #f3a64e); width: 100% ; height: 50px ; border-radius: 50px ; margin-top: 50px ; " > Buy </button></a>
             </div>
           </div>
         </div> </c:forEach>                        
@@ -168,8 +363,8 @@
     </div>
     </section>
   <footer>
-    <div class="container">
-      <p>&copy; 2023 Perishable Shop. All rights reserved
+    <div style="margin-top: 100px">
+      <p style="text-align: center ; color: red">&copy; 2024 Lovely Mobile center . All rights reserved
         </p>
     </div>
     </footer>

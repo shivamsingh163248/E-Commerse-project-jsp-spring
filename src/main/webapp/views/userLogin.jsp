@@ -15,27 +15,30 @@
 
 
 
-<div class="container my-3">
-    
-        <div class="col-sm-6">
-            <h2>User Login</h2>
+<div class="container my-3" style=" background-color: white ; border: 1px solid #ffffff">
+    <div style=" background : linear-gradient(to right, #f1cc83, #fa9c31); margin-left: 25% ; margin-right: 25% ; border: 1px solid red ">
+
+    <img src="../static/images/logo.png" style="height: 150px ; width: 150px ; margin-left: 35%; margin-right: 40% ; margin-top: 10% ;  ">
+        <div class="" style="  margin-left: 5% ; margin-right: 5% ; margin-top: 20px ; ">
+            <h2 style="text-align: center ; font-weight: bold ; color: crimson">Lovely Mobile Center</h2>
             <form action="userloginvalidate" method="post">
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="text" name="username" id="username" placeholder="Username*" required class="form-control form-control-lg">
+                    <input type="text" name="username" id="username" placeholder="Username*" required class="form-control form-control-lg" style="border-radius: 50px;">
                 </div>
 					
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control form-control-lg" placeholder="Password*" required name="password" id="password">
+                    <input type="password" class="form-control form-control-lg" placeholder="Password*" required name="password" id="password"  style="border-radius: 50px;">
                 </div>
                 <span >Don't have an account <a class="linkControl" href="/register">Register here</a></span> <br><br>
 
-                <input type="submit" value="Login" class="btn btn-primary btn-block">
+                <input type="submit" value="Login" class="btn btn-primary btn-block" style="border-radius: 50px; background : linear-gradient(to right, #f18383, #fa3131); border: 1px solid red ">
                 <br><h3 style="color:red;">${msg}</h3>
                 <br>
                 </form>
         </div>
+    </div>
 
 </div>
 

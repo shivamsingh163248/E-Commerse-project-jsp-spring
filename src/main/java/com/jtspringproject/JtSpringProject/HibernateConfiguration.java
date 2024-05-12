@@ -18,13 +18,14 @@ public class HibernateConfiguration {
     @Value("${db.driver}")
     private String DRIVER;
  
-    @Value("${db.password}")
+    @Value("@Itisha8")
     private String PASSWORD;
+    //82.180.143.1 and 3306 url configation for mysql
  
-    @Value("${db.url}")
+    @Value("jdbc:mysql://82.180.143.1:3306/u348475756_ecommerse")
     private String URL;
  
-    @Value("${db.username}")
+    @Value("u348475756_ecommjava")
     private String USERNAME;
  
     @Value("${hibernate.dialect}")

@@ -294,7 +294,7 @@
                 <p class="product-price"> Rs : 999 OFF 50%</p>
                 <p class="product-description">Enjoy your music with the your faev song </p>
                 <div class="buttons">
-                    <button class="add-to-cart">Buy</button>
+                    <a href="https://rzp.io/i/FJSqTozxs1"> <button class="add-to-cart">Buy</button></a>
                     <button class="compare">Offer Product</button>
                 </div>
             </div>
@@ -308,7 +308,7 @@
                 <p class="product-price"> Rs : 999 OFF 50%</p>
                 <p class="product-description">This is the  TYPE -C jack.</p>
                 <div class="buttons">
-                    <button class="add-to-cart">Buy</button>
+                    <a href="https://rzp.io/i/FJSqTozxs1"> <button class="add-to-cart">Buy</button></a>
                     <button class="compare">Offer Product</button>
                 </div>
             </div>
@@ -322,7 +322,7 @@
                 <p class="product-price"> Rs : 999 OFF 50%</p>
                 <p class="product-description">Power up of your charger</p>
                 <div class="buttons">
-                    <button class="add-to-cart">buy</button>
+                   <a href="https://rzp.io/i/FJSqTozxs1"> <button class="add-to-cart">buy</button></a>
                     <button class="compare">Offer Product</button>
                 </div>
             </div>
